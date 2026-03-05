@@ -18,5 +18,24 @@
 /* General */
 body {
     font-family: 'Overpass', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--grey-500);
+    background-color: var(--grey-950);
+    margin: 0;
+    padding: var(--spacing-300);
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p, h1 {
+    margin: 0;
+}
+
+#card {
+    background: var(--gradient-1);
+    border-radius: 15px;
 }
