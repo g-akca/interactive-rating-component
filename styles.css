@@ -42,7 +42,7 @@ p, h1 {
 
 /* Rating Card */
 .rating-card {
-    padding: var(--spacing-300);
+    padding: 27px var(--spacing-300);
 }
 
 #rating-content, form {
@@ -54,7 +54,7 @@ p, h1 {
 .icon {
     width: 40px;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 100%;
     background-color: var(--grey-900);
     display: flex;
     justify-content: center;
@@ -74,8 +74,49 @@ fieldset {
 legend {
     padding: 0;
     margin-bottom: var(--spacing-200);
+    color: white;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
 }
 
 #radio-div {
     margin-top: var(--spacing-200);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: var(--spacing-200);
+    justify-items: center;
+}
+
+#radio-div input {
+    display: none;
+}
+
+#radio-div label {
+    background-color: var(--grey-900);
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 100%;
+    color: var(--grey-500);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 3px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#submit-btn {
+    background-color: var(--orange-500);
+    color: var(--grey-950);
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 1.87px;
+    font-weight: bold;
+    border: none;
+    padding: var(--spacing-200);
+    border-radius: 22.5px;
+    cursor: pointer;
 }
