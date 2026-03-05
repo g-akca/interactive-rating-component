@@ -39,3 +39,43 @@ p, h1 {
     background: var(--gradient-1);
     border-radius: 15px;
 }
+
+/* Rating Card */
+.rating-card {
+    padding: var(--spacing-300);
+}
+
+#rating-content, form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-300);
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: var(--grey-900);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon img {
+    width: 14px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    padding: 0;
+    margin-bottom: var(--spacing-200);
+}
+
+#radio-div {
+    margin-top: var(--spacing-200);
+}
