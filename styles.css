@@ -31,6 +31,10 @@ body {
     justify-content: center;
 }
 
+[hidden] {
+    display: none !important;
+}
+
 p, h1 {
     margin: 0;
 }
@@ -38,6 +42,14 @@ p, h1 {
 #card {
     background: var(--gradient-1);
     border-radius: 15px;
+}
+
+.main-text {
+    color: white;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: var(--spacing-200);
 }
 
 /* Rating Card */
@@ -51,7 +63,7 @@ p, h1 {
     gap: var(--spacing-300);
 }
 
-.icon {
+#rating-content .icon {
     width: 40px;
     height: 40px;
     border-radius: 100%;
@@ -73,11 +85,6 @@ fieldset {
 
 legend {
     padding: 0;
-    margin-bottom: var(--spacing-200);
-    color: white;
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: bold;
 }
 
 #radio-div {
@@ -119,4 +126,34 @@ legend {
     padding: var(--spacing-200);
     border-radius: 22.5px;
     cursor: pointer;
+}
+
+/* Thanks Card */
+.thanks-card {
+    padding: var(--spacing-400) var(--spacing-300);
+}
+
+#thanks-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-300);
+    text-align: center;
+}
+
+#thanks-content .icon img {
+    height: 96px;
+    width: 144px;
+}
+
+.badge {
+    background-color: var(--grey-900);
+    color: var(--orange-500);
+    display: flex;
+    align-items: center;
+    border-radius: 22.5px;
+    font-family: 14px;
+    height: var(--spacing-400);
+    padding: 4px 12px 0;
+    box-sizing: border-box;
 }
