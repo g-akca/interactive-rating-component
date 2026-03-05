@@ -1,5 +1,6 @@
 const options = document.querySelectorAll("input");
 const labels = document.querySelectorAll("label");
+const submitBtn = document.getElementById("submit-btn");
 
 const card = document.getElementById("card");
 const ratingContent = document.getElementById("rating-content");
@@ -12,6 +13,8 @@ options.forEach(option => option.addEventListener("change", () => {
 
     const currentLabel = document.querySelector(`label[for="${option.id}"]`);
     currentLabel.classList.add("selected");
+
+    submitBtn.disabled = false;
 }));
 
 form.addEventListener("submit", (e) => {

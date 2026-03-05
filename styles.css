@@ -137,12 +137,17 @@ legend {
     padding: 16px var(--spacing-200) 15px;
     border-radius: 22.5px;
     cursor: pointer;
-    transition: background-color 0.2s ease, color 0.2s ease;
+    transition: background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease;
 }
 
-#submit-btn:hover {
+#submit-btn:not(:disabled):hover {
     background-color: white;
     color: var(--grey-900);
+}
+
+#submit-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 
 /* Thanks Card */
