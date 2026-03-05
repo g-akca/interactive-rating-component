@@ -152,7 +152,6 @@ legend {
     display: flex;
     align-items: center;
     border-radius: 22.5px;
-    font-family: 14px;
     height: var(--spacing-400);
     padding: 4px 12px 0;
     box-sizing: border-box;
@@ -206,5 +205,23 @@ legend {
     #submit-btn {
         letter-spacing: 0.17px;
         font-weight: 600;
+    }
+
+    /* Thanks Card */
+    .thanks-card {
+        padding: var(--spacing-500) var(--spacing-400);
+    }
+
+    #thanks-content {
+        gap: var(--spacing-400);
+    }
+
+    #thanks-content .icon img {
+        height: 108px;
+        width: 162px;
+    }
+
+    .badge {
+        padding: 4px 20px 0;
     }
 }
