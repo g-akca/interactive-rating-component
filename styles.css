@@ -73,7 +73,7 @@ p, h1 {
     align-items: center;
 }
 
-.icon img {
+#rating-content .icon img {
     width: 14px;
 }
 
@@ -156,4 +156,55 @@ legend {
     height: var(--spacing-400);
     padding: 4px 12px 0;
     box-sizing: border-box;
+}
+
+/* Tablet Responsive */
+@media screen and (min-width: 376px) {
+    /* General */
+    body {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    #card {
+        box-sizing: border-box;
+        max-width: 412px;
+    }
+
+    .main-text {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    /* Rating Card */
+    .rating-card {
+        padding: var(--spacing-400) 30px;
+    }
+
+    #rating-content, form {
+        gap: var(--spacing-400);
+    }
+
+    #rating-content .icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    #rating-content .icon img {
+        width: 16.75px;
+    }
+
+    #radio-div {
+        column-gap: var(--spacing-300);
+    }
+
+    #radio-div label {
+        font-size: 16px;
+        padding-top: 3px;
+    }
+
+    #submit-btn {
+        letter-spacing: 0.17px;
+        font-weight: 600;
+    }
 }
