@@ -1,0 +1,22 @@
+/* Root Styles */
+:root {
+    --grey-500: #969FAD;
+    --grey-900: #262E38;
+    --grey-950: #131518;
+    --orange-500: #FC7614;
+    --gradient-1: radial-gradient(circle at top, #232A34, #181E27);
+
+    --spacing-100: 8px;
+    --spacing-200: 16px;
+    --spacing-300: 24px;
+    --spacing-400: 32px;
+    --spacing-500: 40px;
+    --spacing-1300: 104px;
+    --spacing-1700: 136px;
+}
+
+/* General */
+body {
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+}
