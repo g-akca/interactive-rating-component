@@ -113,6 +113,17 @@ legend {
     padding-top: 3px;
     box-sizing: border-box;
     cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#radio-div label:hover {
+    background-color: white;
+    color: var(--grey-900);
+}
+
+#radio-div label.selected {
+    background-color: var(--orange-500);
+    color: var(--grey-900);
 }
 
 #submit-btn {
@@ -126,6 +137,12 @@ legend {
     padding: 16px var(--spacing-200) 15px;
     border-radius: 22.5px;
     cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#submit-btn:hover {
+    background-color: white;
+    color: var(--grey-900);
 }
 
 /* Thanks Card */
