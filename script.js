@@ -20,9 +20,14 @@ options.forEach(option => option.addEventListener("change", () => {
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    ratingContent.hidden = true;
-    thanksContent.hidden = false;
-    card.className = "thanks-card";
+    card.classList.add("card-exit");
 
-    badge.innerText = `You selected ${form.elements["rating"].value} out of 5`;
+    setTimeout(() => {
+        ratingContent.hidden = true;
+        thanksContent.hidden = false;
+
+        card.className = "thanks-card card-enter";
+
+        badge.innerText = `You selected ${form.elements["rating"].value} out of 5`;
+    }, 400);
 });

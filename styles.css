@@ -52,6 +52,37 @@ p, h1 {
     margin-bottom: var(--spacing-200);
 }
 
+/* Card Pop Animations */
+.card-exit {
+    animation: cardExit 0.3s ease forwards;
+}
+
+.card-enter {
+    animation: cardEnter 0.3s ease forwards;
+}
+
+@keyframes cardExit {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+}
+
+@keyframes cardEnter {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 /* Rating Card */
 .rating-card {
     padding: 27px var(--spacing-300);
