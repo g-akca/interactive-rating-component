@@ -42,6 +42,8 @@ p, h1 {
 #card {
     background: var(--gradient-1);
     border-radius: 15px;
+    max-width: 412px;
+    box-sizing: border-box;
 }
 
 .main-text {
@@ -211,16 +213,11 @@ legend {
 }
 
 /* Tablet Responsive */
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 768px) {
     /* General */
     body {
         font-size: 15px;
         line-height: 24px;
-    }
-
-    #card {
-        box-sizing: border-box;
-        max-width: 412px;
     }
 
     .main-text {
